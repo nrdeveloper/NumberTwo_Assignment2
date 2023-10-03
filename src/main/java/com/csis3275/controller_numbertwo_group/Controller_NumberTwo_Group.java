@@ -13,6 +13,6 @@ public class Controller_NumberTwo_Group {
 	
 	@GetMapping("/")
 	public String homePage_NumberTwo(Model model) {
-		return "HomePage_NumberTwo";
+		return "home";
 	}
 }
