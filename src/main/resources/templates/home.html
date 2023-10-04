@@ -13,13 +13,16 @@ body {
 .image-spacing img {
 text-align: center;
 }
+img:hover{
+	cursor: pointer;
+}
 </style>
 
 </head>
 <body>
 	<div class="image-spacing">
 	<img th:src="@{/profile-picture.png}" onclick="window.location.href='/student/nahuel';">
-	<img th:src="@{/profile-picture.png}">
+	<img th:src="@{/profile-picture.png}" onclick="window.location.href='/student/vlad';">
 	<img th:src="@{/profile-picture.png}">
 	</div>
 	<p th:text="${home_model.description}"></p>
