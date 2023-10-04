@@ -19,4 +19,10 @@ public class Controller_NumberTwo_Group {
 		model.addAttribute("home_model", new Home_Model());
 		return "home";
 	}
+	
+	@GetMapping("/student/nahuel")
+	public String nahuel_profile(Model model) {
+		model.addAttribute("nahuel", student_nahuel);
+		return "student_profiles/nahuel_profile";
+	}
 }
