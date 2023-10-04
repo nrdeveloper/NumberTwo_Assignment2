@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.csis3275.models_numbertwo_group.Home_Model;
+import com.csis3275.models_numbertwo_group.Student_Model;
 
 // Home page controller
 // Displays 3 link/buttons to team member's personal pages and a group description
@@ -13,6 +14,15 @@ import com.csis3275.models_numbertwo_group.Home_Model;
 
 @Controller
 public class Controller_NumberTwo_Group {
+	
+	// Description for testing Purposes
+	String description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+			+ "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+			+ "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+			+ "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+	
+	Student_Model student_nahuel = new Student_Model("Nahuel Robledo", description);
+	
 	
 	@GetMapping("/")
 	public String homePage_NumberTwo(Model model) {
