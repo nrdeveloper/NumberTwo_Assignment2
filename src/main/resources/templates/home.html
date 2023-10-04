@@ -5,14 +5,22 @@
 <title>Number Two - Assignemnt 2</title>
 
 <style>
-	body{
-		width: 80%;
-		text-align: center;
-	}
+body {
+	width: 80%;
+	text-align: center;
+}
+.image-spacing img {
+	 margin: 10px;
+}
 </style>
 
 </head>
 <body>
-<p th:text="${home_model.desc}"></p>
+	<div class="image-spacing">
+	<img th:src="@{/profile-picture.png}">
+	<img th:src="@{/profile-picture.png}">
+	<img th:src="@{/profile-picture.png}">
+	</div>
+	<p th:text="${home_model.description}"></p>
 </body>
 </html>
