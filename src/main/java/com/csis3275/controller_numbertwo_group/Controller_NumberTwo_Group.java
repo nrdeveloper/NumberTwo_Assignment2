@@ -35,4 +35,11 @@ public class Controller_NumberTwo_Group {
 		model.addAttribute("nahuel", student_nahuel);
 		return "student_profiles/nahuel_profile";
 	}
+	
+	@GetMapping("/student/vlad")
+	public String vlad_profile(Model model) {
+		model.addAttribute("vlad", new Student_Model("/vlad_img.jpg", "Vlad lives in Vancouver where he studies for Computing Studies and IT. He studies at Doulas College, and works at a local New West restaraunt. Recently Vlad got into a card game called Magic The Gathering where he spends all of his money and time. Vlad is very happy to do and especially finish this assignment :)"));
+		return "student_profiles/vlad_profile";
+	}
+	
 }
