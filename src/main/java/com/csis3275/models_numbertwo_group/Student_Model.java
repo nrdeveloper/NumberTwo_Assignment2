@@ -1,21 +1,21 @@
 package com.csis3275.models_numbertwo_group;
 
 public class Student_Model {
-	private String name;
+	private String photo;
 	private String description;
 	
 	public Student_Model() {};
 	
-	public Student_Model(String name, String description) {
-		this.name = name;
+	public Student_Model(String photo, String description) {
+		this.photo = photo;
 		this.description = description;
 	}
 	
-	public String getName() {
-		return name;
+	public String getPhoto() {
+		return photo;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setPhoto(String photo) {
+		this.photo = photo;
 	}
 	public String getDescription() {
 		return description;
