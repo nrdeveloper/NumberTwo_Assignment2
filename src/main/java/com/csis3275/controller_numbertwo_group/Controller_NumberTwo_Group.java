@@ -31,6 +31,12 @@ public class Controller_NumberTwo_Group {
 	}
 	
 	@GetMapping("/student/nahuel")
+	public String giahuy_progile(Model model) {
+		model.addAttribute("giahuy", student_giahuy);
+		return "student_profiles/giahuy_profile";
+	}
+	
+	@GetMapping("/student/nahuel")
 	public String nahuel_profile(Model model) {
 		model.addAttribute("nahuel", student_nahuel);
 		return "student_profiles/nahuel_profile";
