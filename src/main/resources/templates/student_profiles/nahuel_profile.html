@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<head xmlns:th="https://www.thymeleaf.org">
+<meta charset="UTF-8">
+<title>Nahuel Robledo</title>
+<style>
+	.display-info{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 34px;
+		justify-content: center;
+		align-items: center;
+		max-width: 700px;
+		margin: auto;
+		padding: 15px;
+		border: 1px solid lightcoral;
+		border-radius: 10px;
+		margin-top: 5em;
+	}
+	
+</style>
 </head>
 <body>
-<h1>Nahuel Profile</h1>
+	<div class="display-info">
+		<p th:text="${nahuel.description}"></p>
+		<img th:src="@{${nahuel.photo}}">
+	</div>
+
 </body>
 </html>
