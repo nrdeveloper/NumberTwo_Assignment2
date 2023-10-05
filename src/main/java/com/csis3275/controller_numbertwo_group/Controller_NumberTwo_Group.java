@@ -24,6 +24,12 @@ public class Controller_NumberTwo_Group {
 		return "home";
 	}
 	
+	@GetMapping("/student/giahuy")
+	public String giahuy_progile(Model model) {
+		model.addAttribute("giahuy", new Student_Model("/giahuy_selfie", "Huy has been stuying abroad in Vancouver since 2019, currently is a full time student at Douglas College, also having a part-time job at a small supermarket which mostly import Asian food into Vancouver, Canada"));
+		return "student_profiles/giahuy_profile";
+	}
+	
 	@GetMapping("/student/nahuel")
 	public String nahuel_profile(Model model) {
 		model.addAttribute("nahuel", student_nahuel);
